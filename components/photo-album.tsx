@@ -28,9 +28,9 @@ function Sparkle({ delay = 0 }) {
         delay,
         ease: "easeOut",
       }}
-      className="absolute w-2 h-2 bg-pink-400 rounded-full"
+      className="absolute w-2 h-2 bg-blue-400 rounded-full"
       style={{
-        boxShadow: "0 0 20px 2px rgba(255, 182, 193, 0.8)",
+        boxShadow: "0 0 20px 2px rgba(139, 159, 228, 0.8)",
       }}
     />
   )
@@ -104,7 +104,7 @@ export function PhotoAlbum() {
 
   return (
     <div className="min-h-screen relative flex flex-col items-center justify-center py-12 space-y-8 overflow-hidden
-      bg-gradient-to-b from-red-950 via-[#200] to-red-950">
+  bg-gradient-to-b from-blue-50 via-blue-900 to-blue-50">
       {/* Background Hearts - increased count and spread */}
       {Array.from({ length: 30 }).map((_, i) => (
         <FloatingHeart 
@@ -115,7 +115,7 @@ export function PhotoAlbum() {
       ))}
 
       {/* Semi-transparent overlay - adjusted opacity */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-blue-50/30" />
 
       {/* Content container - make sure it's above the overlay */}
       <div className="relative z-10 flex flex-col items-center space-y-8">
@@ -136,10 +136,10 @@ export function PhotoAlbum() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-4xl font-bold text-white text-center mb-8"
+          className="text-4xl font-bold text-blue-800 text-center mb-8"
         >
-          Thank you for being my Valentine&apos;s forever!
-          <span className="text-pink-500">❤</span>
+          Here's a list of dishes that I'd like us to make together for Christmas!
+          <span className="text-pink-500"> ❤</span>
         </motion.h1>
 
         <div className="relative w-[640px] h-[480px] overflow-hidden rounded-lg shadow-2xl">
@@ -163,7 +163,7 @@ export function PhotoAlbum() {
               {/* Photo caption/overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
                 <p className="text-white text-center text-xl">
-                  Our memories together ❤️
+                  Loook at thaaat!
                 </p>
               </div>
             </motion.div>
@@ -193,8 +193,7 @@ export function PhotoAlbum() {
           className="max-w-2xl mx-auto px-4 mt-8"
         >
           <p className="text-white text-center text-lg leading-relaxed">
-            Hello babe! Thank you for being my Valentine&apos;s again this year!
-            I love you so much! Continue writing the rest of your message here ok!
+            ¡Arigatou! 👏🏼
           </p>
         </motion.div>
       </div>

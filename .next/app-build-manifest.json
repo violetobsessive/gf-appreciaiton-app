@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/flower/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/flower/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,10 +11,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/flower/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/flower/page.js"
+      "static/chunks/app/page.js"
     ],
     "/photo-album/page": [
       "static/chunks/webpack.js",

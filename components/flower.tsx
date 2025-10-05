@@ -5,15 +5,15 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useRouter } from "next/navigation"
 import { X } from "lucide-react"
 
-const loveMessages = [
-  "You are can edit all of these messages",
-  "You are amazing", 
-  "You are beautiful",
-  "You are a good person",
-  "You are my best friend",
-  "You are my one and only" ,
-  "You are my soulmate",
-  "Yeoshi was here lol!",
+const loveMessages = [ 
+  "Peru 🚞",
+  "Tanzania 🦓",
+  "South Africa 🏖️",
+  "Lofoten 🚠",
+  "Switzerland 🏞️",
+  "Iceland 🌌" ,
+  "Dolomites ⛰️",
+  "Montenegro ⛺"
 ]
 
 export function Flower() {
@@ -43,8 +43,8 @@ export function Flower() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white">
-      <h1 className="text-3xl font-bold text-pink-600 mb-12 text-center">
-        8 Reasons Why I Love You!
+      <h1 className="text-3xl font-bold text-blue-600 mb-12 text-center">
+        8 Destinations I want to go 
       </h1>
       <div className="relative w-[400px] h-[400px] flex items-center justify-center">
         {/* Flower stem */}
@@ -72,9 +72,9 @@ export function Flower() {
                 key={index}
                 className="absolute w-28 h-44
                   cursor-pointer rounded-[100%_0%_100%_0%]
-                  border-2 border-pink-400 shadow-lg"
+                  border-2 border-blue-400 shadow-lg"
                 style={{
-                  background: "linear-gradient(135deg, #FFB6C1 20%, #FF69B4 100%)",
+                  background: "linear-gradient(135deg, #c7ffb6ff 20%, #ffe469ff 100%)",
                   transformOrigin: "center center",
                   left: "50%",
                   top: "50%",
@@ -100,8 +100,8 @@ export function Flower() {
 
         {/* Center circle */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 
-          bg-gradient-to-r from-pink-400 to-pink-500 rounded-full z-20 
-          shadow-inner border-2 border-pink-300" 
+          bg-gradient-to-r from-purple-400 to-pink-500 rounded-full z-20 
+          shadow-inner border-2 border-blue-400" 
         />
       </div>
 

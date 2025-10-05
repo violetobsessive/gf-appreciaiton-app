@@ -4,31 +4,29 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from 'next/image'
 import Link from 'next/link'
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
-export default function ValentinePage() {
+export default function MissmealentinePage() {
   const [noCount, setNoCount] = useState(0)
   const [yesPressed, setYesPressed] = useState(false)
   const [yesScale, setYesScale] = useState(1)
 
   const noTexts = [
-    "No",
-    "B, are you sure?",
-    "I will shower in the morning more please!!!",
-    "I'll stop playing ML okay?",
-    "POOKIE PLEASE...",
-    "WE'D BE THE CUTEST PAIR WITH YEOSHI???",
-    "I'll stop setting so many alarms!!!",
-    "Is it because I keep watching KPOP...",
-    "But you are my destiny...",
-    "You can edit the text in these buttons!",
-    "Have a heart!",
-    "Don't be so cold!",
-    "Change of heart?",
-    "Wouldn't you reconsider?",
-    "Is that your final answer?",
-    "You're breaking my heart ;(",
+    "Nein",
+    "Are you damn sure?",
+    "Again?",
+    "You little prick!",
+    "Biggest wanker in the universe",
+    "Really?? WOW",
+    "Men...",
+    "Still testing how long would it go till you hit the yes button, aren't you",
+    "Oh it fucking goes",
+    "See? I wasn't lying",
+    "Right, I see...",
+    "You don't love me anymore...",
+    ":((((((",
+    "FUCK OFF NOW",
   ]
 
   // Calculate random position OUTSIDE the card
@@ -102,21 +100,23 @@ export default function ValentinePage() {
   const shouldShowNoButton = yesScale < 30 && !yesPressed;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen -mt-16">
-      <Card className="w-[650px] relative overflow-visible">
+    <div className="flex flex-col items-center justify-center min-h-screen py-12 
+  bg-gradient-to-b from-blue-50 via-blue-800 to-blue-50">
+      <Card className="w-[650px] relative overflow-visible bg-yellow-100">
         <CardHeader>
-          <CardTitle className="text-center">Will you be my Valentine?</CardTitle>
+          <CardTitle className="text-center">GF appreciation page</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col items-center">
           <div className="w-[300px] h-[300px] relative mb-8">
-            <Image
-              src="/miffy.png"
-              alt="Miffy"
+             <Image
+              src="/penpen.gif"
+              alt="penguin"
               fill
               style={{ objectFit: 'contain' }}
               priority
             />
           </div>
+          <CardDescription className="text-center">Miss me please?</CardDescription>
           <div className="flex items-center justify-center w-full relative" style={{ minHeight: '150px' }}>
             <div className="flex gap-4 items-center justify-center">
               <motion.div 
@@ -128,7 +128,7 @@ export default function ValentinePage() {
                   className="px-8 bg-transparent hover:bg-transparent"
                   onClick={() => setYesPressed(true)}
                 >
-                  Yes
+                  Ja
                 </Button>
               </motion.div>
               {shouldShowNoButton && (
@@ -145,21 +145,23 @@ export default function ValentinePage() {
           </div>
         </CardContent>
       </Card>
+      <p>Made by F with love ❤️</p>
       
       {yesPressed && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <Card className="w-[400px]">
             <CardHeader>
-              <CardTitle className="text-center">Yay!!! I knew you'd say yes! 🎉</CardTitle>
+              <CardTitle className="text-center">Fianlly, you bastard 🙄</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col items-center space-y-4">
-              <p className="text-center">Can't wait to spend Valentine's day with you and Yeoshi! ❤️</p>
+              <p className="text-center">Yes, I miss you too if you're wondering heehee 🦭🦆🦉🐰🐮🦥😇</p>
               <Link 
                 href="/flower"
                 className="text-blue-500 hover:text-blue-700 underline"
               >
-                Here's a bouquet for you!
+                Here's a little bonquet for you!🌷
               </Link>
+              <p>There's somthing I want to let you know...</p>
             </CardContent>
           </Card>
         </div>
